@@ -6,8 +6,7 @@
             
             }
         header {
-            grid-column-start:1 ; 
-            grid-column-end: 14;
+            grid-column:1/-1 !important;         
             background-color: rgba(22, 13, 100, 0.877);
             
             text-decoration: none;
@@ -144,3 +143,4 @@
         height: auto;
     }
 }
+
