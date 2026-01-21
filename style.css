@@ -121,4 +121,26 @@
             background-color:rgba(22, 13, 100, 0.877);
             text-align:center; 
 
+
         }
+@media (max-width: 768px) {
+    .container {
+        display: block; /* No celular, é melhor empilhar os elementos em vez de usar grid complexo */
+    }
+
+    header, .menu, .principal, footer {
+        grid-column-start: 1 !important;
+        grid-column-end: -1 !important;
+        width: 100%; /* Garante que ocupem a largura toda da tela */
+    }
+
+    ul {
+        flex-direction: column; /* Faz o menu ficar um item abaixo do outro no celular */
+        padding: 0;
+    }
+
+    img {
+        max-width: 100%; /* Impede que imagens "vazem" para fora da tela */
+        height: auto;
+    }
+}
